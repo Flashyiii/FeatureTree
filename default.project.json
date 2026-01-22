@@ -1,0 +1,161 @@
+{
+  "emitLegacyScripts": false,
+  "name": "Boilerplate",
+  "tree": {
+    "$className": "DataModel",
+    "ReplicatedStorage": {
+      "Source": {
+        "$className": "Folder",
+        "Features": {
+          "$className": "Folder",
+          "Admin": {
+            "$className": "Folder",
+            "AdminServiceClient": {
+              "$path": "src/features/admin/AdminServiceClient.luau"
+            },
+            "Modules": {
+              "$className": "Folder",
+              "GetData": {
+                "$path": "src/features/admin/modules/GetData.luau"
+              }
+            }
+          },
+          "App": {
+            "$className": "Folder",
+            "UI": {
+              "$className": "Folder",
+              "root.story": {
+                "$path": "src/features/app/ui/root.story.luau"
+              },
+              "RootUI": {
+                "$path": "src/features/app/ui/RootUI.luau"
+              }
+            }
+          },
+          "Base": {
+            "$className": "Folder",
+            "BaseServiceClient": {
+              "$path": "src/features/base/BaseServiceClient.luau"
+            },
+            "Modules": {
+              "$className": "Folder",
+              "BaseUtils": {
+                "$path": "src/features/base/modules/BaseUtils.luau"
+              }
+            }
+          }
+        },
+        "Core": {
+          "$className": "Folder",
+          "Platform": {
+            "$className": "Folder",
+            "SoundController": {
+              "$path": "src/core/platform/SoundController.luau"
+            }
+          },
+          "UI": {
+            "$className": "Folder",
+            "AutoScaledFrame": {
+              "$path": "src/core/ui/AutoScaledFrame.luau"
+            },
+            "Hooks": {
+              "$className": "Folder",
+              "useSpring": {
+                "$path": "src/core/ui/hooks/useSpring.luau"
+              },
+              "useTag": {
+                "$path": "src/core/ui/hooks/useTag.luau"
+              },
+              "useTween": {
+                "$path": "src/core/ui/hooks/useTween.luau"
+              },
+              "useViewportSize": {
+                "$path": "src/core/ui/hooks/useViewportSize.luau"
+              }
+            },
+            "Primitives": {
+              "$className": "Folder",
+              "Button": {
+                "$path": "src/core/ui/primitives/Button.luau"
+              },
+              "ImageLabel": {
+                "$path": "src/core/ui/primitives/ImageLabel.luau"
+              },
+              "TextLabel": {
+                "$path": "src/core/ui/primitives/TextLabel.luau"
+              }
+            },
+            "UITypes": {
+              "$path": "src/core/ui/UITypes.luau"
+            }
+          }
+        },
+        "Game": {
+          "$className": "Folder",
+          "Assets": {
+            "$className": "Folder",
+            "AnimationIds": {
+              "$path": "src/game/assets/AnimationIds.luau"
+            },
+            "ImageIds": {
+              "$path": "src/game/assets/ImageIds.luau"
+            },
+            "SoundIds": {
+              "$path": "src/game/assets/SoundIds.luau"
+            }
+          },
+          "Configs": {
+            "$path": "src/game/Configs.luau"
+          },
+          "Items": {
+            "$className": "Folder",
+            "DataTemplate": {
+              "$path": "src/game/items/DataTemplate.luau"
+            }
+          }
+        },
+        "StartUp": {
+          "$className": "Folder",
+          "MountUI": {
+            "$path": "src/startup/MountUI.luau"
+          },
+          "Client": {
+            "$path": "src/startup/Client.client.luau"
+          }
+        }
+      },
+      "Packages": {
+        "$path": "Packages"
+      }
+    },
+    "ServerScriptService": {
+      "Features": {
+        "$className": "Folder",
+        "Admin": {
+          "$className": "Folder",
+          "AdminServiceServer": {
+            "$path": "src/features/admin/AdminServiceServer.luau"
+          }
+        },
+        "Base": {
+          "$className": "Folder",
+          "BaseServiceServer": {
+            "$path": "src/features/base/BaseServiceServer.luau"
+          }
+        }
+      },
+      "Core": {
+        "$className": "Folder"
+      },
+      "Game": {
+        "$className": "Folder"
+      },
+      "StartUp": {
+        "$className": "Folder",
+        "Server": {
+          "$path": "src/startup/Server.server.luau"
+        }
+      }
+    }
+  }
+}
