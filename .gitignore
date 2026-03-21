@@ -1,0 +1,15 @@
+# Roblox
+*.rbxl
+*.rbxlx
+*.rbxl.lock
+*.rbxlx.lock
+sourcemap.json
+
+# Dependencies
+node_modules/
+Packages/
+ServerPackages/
+
+# System Files
+.DS_Store
+Thumbs.db

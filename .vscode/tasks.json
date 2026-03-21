@@ -1,0 +1,25 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "🚀 Create New Roblox Project",
+			"type": "shell",
+			"command": "git clone https://github.com/Flashyiii/FeatureTree.git \"${input:projectName}\" && cd \"${input:projectName}\" && ./setup.bat && code -r .",
+			"options": {
+				"cwd": "C:\\Users\\Titus\\Documents\\RobloxProjects"
+			},
+			"problemMatcher": [],
+			"presentation": {
+				"reveal": "always",
+				"panel": "new"
+			}
+		}
+	],
+	"inputs": [
+		{
+			"id": "projectName",
+			"type": "promptString",
+			"description": "Enter the name for your new Roblox project:"
+		}
+	]
+}
