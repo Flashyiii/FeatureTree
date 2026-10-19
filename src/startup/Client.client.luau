@@ -1,7 +1,5 @@
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 
-local AdminServiceClient = require(ReplicatedStorage.Source.Features.Admin.AdminServiceClient)
-local MountUI = require(script.Parent.MountUI)
-MountUI()
+local MovementClient = require(ReplicatedStorage.Source.Features.Movement.MovementClient)
 
-AdminServiceClient:init()
+MovementClient:init()

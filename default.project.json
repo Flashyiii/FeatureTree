@@ -1,58 +1,47 @@
 {
   "emitLegacyScripts": false,
-  "name": "Boilerplate",
+  "name": "AnimeMovement",
   "tree": {
     "$className": "DataModel",
     "ReplicatedStorage": {
+      "$ignoreUnknownInstances": true,
       "Source": {
         "$className": "Folder",
         "Features": {
           "$className": "Folder",
-          "Admin": {
+          "Movement": {
             "$className": "Folder",
-            "AdminServiceClient": {
-              "$path": "src/features/admin/AdminServiceClient.luau"
+            "Config": {
+              "$path": "src/features/movement/Config.luau"
             },
             "Modules": {
               "$className": "Folder",
-              "GetData": {
-                "$path": "src/features/admin/modules/GetData.luau"
-              }
-            }
-          },
-          "App": {
-            "$className": "Folder",
-            "UI": {
-              "$className": "Folder",
-              "root.story": {
-                "$path": "src/features/app/ui/root.story.luau"
+              "Camera": {
+                "$path": "src/features/movement/modules/Camera.luau"
               },
-              "RootUI": {
-                "$path": "src/features/app/ui/RootUI.luau"
+              "Character": {
+                "$path": "src/features/movement/modules/Character.luau"
+              },
+              "Effects": {
+                "$path": "src/features/movement/modules/Effects.luau"
+              },
+              "Skills": {
+                "$path": "src/features/movement/modules/Skills.luau"
+              },
+              "Traversal": {
+                "$path": "src/features/movement/modules/Traversal.luau"
+              },
+              "VFX": {
+                "$path": "src/features/movement/modules/VFX.luau"
               }
-            }
-          },
-          "Base": {
-            "$className": "Folder",
-            "BaseServiceClient": {
-              "$path": "src/features/base/BaseServiceClient.luau"
             },
-            "Modules": {
-              "$className": "Folder",
-              "BaseUtils": {
-                "$path": "src/features/base/modules/BaseUtils.luau"
-              }
+            "MovementClient": {
+              "$path": "src/features/movement/MovementClient.luau"
             }
           }
         },
         "Core": {
-          "$className": "Folder",
-          "Platform": {
-            "$className": "Folder",
-            "SoundController": {
-              "$path": "src/core/platform/SoundController.luau"
-            }
-          }
+          "$className": "Folder"
         },
         "Game": {
           "$className": "Folder",
@@ -61,45 +50,27 @@
             "AnimationIds": {
               "$path": "src/game/assets/AnimationIds.luau"
             },
-            "ImageIds": {
-              "$path": "src/game/assets/ImageIds.luau"
-            },
             "SoundIds": {
               "$path": "src/game/assets/SoundIds.luau"
             }
           },
-          "Configs": {
-            "$path": "src/game/Configs.luau"
-          },
-          "Items": {
+          "Modules": {
             "$className": "Folder",
-            "DataTemplate": {
-              "$path": "src/game/items/DataTemplate.luau"
+            "Camera": {
+              "$className": "Folder",
+              "CameraController": {
+                "$path": "src/game/modules/camera/CameraController.luau"
+              },
+              "OrbitCamera": {
+                "$path": "src/game/modules/camera/OrbitCamera.luau"
+              }
             }
           }
         },
         "StartUp": {
           "$className": "Folder",
-          "MountUI": {
-            "$path": "src/startup/MountUI.luau"
-          },
           "Client": {
             "$path": "src/startup/Client.client.luau"
-          }
-        },
-        "UI": {
-          "$className": "Folder",
-          "Components": {
-            "$className": "Folder",
-            "AutoScaledFrame": {
-              "$path": "src/ui/components/AutoScaledFrame.luau"
-            }
-          },
-          "Hooks": {
-            "$className": "Folder",
-            "useViewportSize": {
-              "$path": "src/ui/hooks/useViewportSize.luau"
-            }
           }
         }
       },
@@ -110,16 +81,10 @@
     "ServerScriptService": {
       "Features": {
         "$className": "Folder",
-        "Admin": {
+        "Movement": {
           "$className": "Folder",
-          "AdminServiceServer": {
-            "$path": "src/features/admin/AdminServiceServer.luau"
-          }
-        },
-        "Base": {
-          "$className": "Folder",
-          "BaseServiceServer": {
-            "$path": "src/features/base/BaseServiceServer.luau"
+          "MovementServer": {
+            "$path": "src/features/movement/MovementServer.luau"
           }
         }
       },

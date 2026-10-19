@@ -29,7 +29,6 @@ function getVirtualPath(filepath) {
 
   if (filename === "init") {
     name = folderName;
-    props.RunContext = filename.endsWith(".server") ? "Server" : "Client";
   } else if (
     ["server", "client", "utils", "types"].includes(filename.toLowerCase())
   ) {
@@ -52,11 +51,12 @@ function getVirtualPath(filepath) {
 
 const tree = {
   emitLegacyScripts: false,
-  name: "Boilerplate",
+  name: "AnimeMovement",
   tree: {
     $className: "DataModel",
 
     ReplicatedStorage: {
+      $ignoreUnknownInstances: true,
       Source: {
         $className: "Folder",
         Features: { $className: "Folder" },
@@ -64,7 +64,6 @@ const tree = {
         Game: { $className: "Folder" },
         StartUp: {
           $className: "Folder",
-          MountUI: { $path: "src/startup/MountUI.luau" },
           Client: { $path: "src/startup/Client.client.luau" },
         },
       },
