@@ -43,6 +43,11 @@ version = "0.4.0"
 dependencies = []
 
 [[package]]
+name = "cheetiedotpy/wcs"
+version = "2.5.0"
+dependencies = []
+
+[[package]]
 name = "csqrl/sift"
 version = "0.0.11"
 dependencies = []
@@ -55,7 +60,7 @@ dependencies = []
 [[package]]
 name = "flashyi/boiler"
 version = "0.1.0"
-dependencies = [["CameraShaker", "brittonfischer/camerashaker@0.1.0"], ["Charm", "neohertz/charm@0.11.0"], ["Conch", "alicesaidhi/conch@0.3.1"], ["ConchUI", "alicesaidhi/conch-ui@0.3.1"], ["DataService", "leifstout/dataservice@0.4.0"], ["Janitor", "howmanysmall/janitor@1.18.3"], ["Networker", "leifstout/networker@0.3.0"], ["Observer", "tazmondo/observer@0.3.4"], ["Promise", "evaera/promise@4.0.0"], ["Replica", "ayrezrblx/replica@0.1.9"], ["Richtext", "lipetos/richtext@0.1.2"], ["Ripple", "littensy/ripple@0.9.3"], ["ServicePlayerData", "leifstout/serviceplayerdata@0.1.2"], ["Sift", "csqrl/sift@0.0.11"], ["Signal", "sleitnick/signal@2.0.3"], ["Topbarplus", "1foreverhd/topbarplus@3.4.0"], ["Vide", "centau/vide@0.4.0"], ["Zoneplus", "mattschrubb/zoneplus@3.2.0"]]
+dependencies = [["CameraShaker", "brittonfischer/camerashaker@0.1.0"], ["Charm", "neohertz/charm@0.11.0"], ["Conch", "alicesaidhi/conch@0.3.1"], ["ConchUI", "alicesaidhi/conch-ui@0.3.1"], ["DataService", "leifstout/dataservice@0.4.0"], ["Janitor", "howmanysmall/janitor@1.18.3"], ["Networker", "leifstout/networker@0.3.0"], ["Observer", "tazmondo/observer@0.3.4"], ["Promise", "evaera/promise@4.0.0"], ["Replica", "ayrezrblx/replica@0.1.9"], ["Richtext", "lipetos/richtext@0.1.2"], ["Ripple", "littensy/ripple@0.9.3"], ["ServicePlayerData", "leifstout/serviceplayerdata@0.1.2"], ["Sift", "csqrl/sift@0.0.11"], ["Signal", "sleitnick/signal@2.0.3"], ["Topbarplus", "1foreverhd/topbarplus@3.4.0"], ["Vide", "centau/vide@0.4.0"], ["Zoneplus", "mattschrubb/zoneplus@3.2.0"], ["wcs", "cheetiedotpy/wcs@2.5.0"]]
 
 [[package]]
 name = "howmanysmall/janitor"
